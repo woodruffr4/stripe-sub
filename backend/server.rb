@@ -7,7 +7,7 @@ Stripe.api_key = 'sk_test_51LC2VkLAeX6l5H0X1nehp8ewhv5UPGcwILTzM9DdP3XaDWpAPPzDL
 set :static, true
 set :port, 4242
 
-YOUR_DOMAIN = 'http://localhost:4242'
+YOUR_DOMAIN = 'http://localhost:3000'
 
 post '/create-checkout-session' do
   prices = Stripe::Price.list(
